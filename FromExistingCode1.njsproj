@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06a44664-1c6e-4a13-b412-55508d4375ad}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".cfignore" />
+    <Content Include=".env" />
+    <Content Include=".env.example" />
+    <Content Include=".eslintignore" />
+    <Content Include=".eslintrc.yml" />
+    <Content Include=".gitignore" />
+    <Content Include=".travis.yml" />
+    <Content Include=".vs\car-dashboard-master\config\applicationhost.config" />
+    <Content Include=".vs\config\applicationhost.config" />
+    <Content Include=".vs\ProjectSettings.json" />
+    <Content Include=".vs\slnx.sqlite" />
+    <Content Include=".vs\VSWorkspaceState.json" />
+    <Content Include="bin\Microsoft.NodejsTools.WebRole.dll" />
+    <Content Include="car-dashboard-master - Shortcut.lnk" />
+    <Content Include="LICENSE" />
+    <Content Include="manifest.yml" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config" />
+    <None Include="gsknodeapp - Web Deploy.pubxml" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="CONTRIBUTING.MD" />
+    <Content Include="README.md" />
+    <Content Include="app.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="server.js" />
+    <Content Include="config\error-handler.js" />
+    <Content Include="config\express.js" />
+    <Content Include="config\security.js" />
+    <Content Include="dist\chat.html" />
+    <Content Include="dist\home.html" />
+    <Content Include="dist\index.html" />
+    <Content Include="dist\login1.html" />
+    <Content Include="dist\login.html" />
+    <Content Include="dist\video.html" />
+    <Content Include="dist\dashboard.min.js" />
+    <Content Include="dist\vendor.min.js" />
+    <Content Include="readme_images\app_create.PNG" />
+    <Content Include="readme_images\bluemix.png" />
+    <Content Include="readme_images\compute.PNG" />
+    <Content Include="readme_images\createproject.PNG" />
+    <Content Include="readme_images\credentials.png" />
+    <Content Include="readme_images\deploy-finished.png" />
+    <Content Include="readme_images\deploy-on-bluemix-simple-app.png" />
+    <Content Include="readme_images\deploy.PNG" />
+    <Content Include="readme_images\details.PNG" />
+    <Content Include="readme_images\env.png" />
+    <Content Include="readme_images\filter.PNG" />
+    <Content Include="readme_images\filter1.PNG" />
+    <Content Include="readme_images\importGA.PNG" />
+    <Content Include="readme_images\import_intents.png" />
+    <Content Include="readme_images\local.png" />
+    <Content Include="readme_images\logs.PNG" />
+    <Content Include="readme_images\logs1.PNG" />
+    <Content Include="readme_images\services.PNG" />
+    <Content Include="readme_images\toolchain-ready.png" />
+    <Content Include="readme_images\viewyourapp.PNG" />
+    <Content Include="readme_images\workspaceid.PNG" />
+    <Content Include="readme_images\workspace_details.png" />
+    <Content Include="routes\benefitplanservice.js" />
+    <Content Include="routes\chat.js" />
+    <Content Include="routes\config.js" />
+    <Content Include="routes\conversation.js" />
+    <Content Include="routes\login.js" />
+    <Content Include="routes\speech-to-text.js" />
+    <Content Include="routes\text-to-speech.js" />
+    <Content Include="routes\userInfo.js" />
+    <Content Include="routes\video.js" />
+    <Content Include="test\test.express.js" />
+    <Content Include="training\car_workspace.json" />
+    <Content Include="ui\chat.html" />
+    <Content Include="ui\home.html" />
+    <Content Include="ui\index.html" />
+    <Content Include="ui\login.html" />
+    <Content Include="ui\video.html" />
+    <Content Include="dist\css\animations.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\css\conversation.css" />
+    <Content Include="dist\css\font.css" />
+    <Content Include="dist\css\main.css" />
+    <Content Include="dist\css\main.min.css" />
+    <Content Include="dist\css\responsive.css" />
+    <Content Include="dist\css\sidebar.css" />
+    <Content Include="dist\css\style.css" />
+    <Content Include="dist\css\tooltip-dialogs.css" />
+    <Content Include="dist\css\weather.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\fonts\ibm-glyph.svg" />
+    <Content Include="dist\fonts\ibm-icons.svg" />
+    <Content Include="dist\fonts\menlo.svg" />
+    <Content Include="dist\ibm\speech-to-text.js" />
+    <Content Include="dist\ibm\text-to-speech.js" />
+    <Content Include="dist\ibm\watson-speech.min.js" />
+    <Content Include="dist\images\150174473871443.png" />
+    <Content Include="dist\images\3B33F20327EE6DA0.png" />
+    <Content Include="dist\images\3B33F20327EE6DA3.png" />
+    <Content Include="dist\images\3B33F20327EE6DA6.png" />
+    <Content Include="dist\images\close-button.png" />
+    <Content Include="dist\images\ibm_watson_logo_colors.png" />
+    <Content Include="dist\images\ibm_watson_logo_colors1.png" />
+    <Content Include="dist\images\ibm_watson_logo_purple.png" />
+    <Content Include="dist\images\newwatson.png" />
+    <Content Include="dist\images\WBA-logo.png" />
+    <Content Include="dist\images\aha-bg_1.jpg" />
+    <Content Include="dist\images\ibm_watson_logo_colors.jpg" />
+    <Content Include="dist\images\login-bg.jpg" />
+    <Content Include="dist\images\test.jpg" />
+    <Content Include="dist\images\favicon.ico" />
+    <Content Include="dist\images\ac hi.svg" />
+    <Content Include="dist\images\ac lo.svg" />
+    <Content Include="dist\images\audio-off.svg" />
+    <Content Include="dist\images\audio-on.svg" />
+    <Content Include="dist\images\background.svg" />
+    <Content Include="dist\images\console frame.svg" />
+    <Content Include="dist\images\console map.svg" />
+    <Content Include="dist\images\dashboard.svg" />
+    <Content Include="dist\images\default screen.svg" />
+    <Content Include="dist\images\head.svg" />
+    <Content Include="dist\images\headlights.svg" />
+    <Content Include="dist\images\heat hi.svg" />
+    <Content Include="dist\images\heat lo.svg" />
+    <Content Include="dist\images\home.svg" />
+    <Content Include="dist\images\lh-logo.svg" />
+    <Content Include="dist\images\logout.svg" />
+    <Content Include="dist\images\map food cuisine.svg" />
+    <Content Include="dist\images\map food numbers.svg" />
+    <Content Include="dist\images\map food.svg" />
+    <Content Include="dist\images\map gas.svg" />
+    <Content Include="dist\images\map general.svg" />
+    <Content Include="dist\images\map restrooms.svg" />
+    <Content Include="dist\images\mic-off.svg" />
+    <Content Include="dist\images\mic-on.svg" />
+    <Content Include="dist\images\music classical.svg" />
+    <Content Include="dist\images\music general.svg" />
+    <Content Include="dist\images\music genre.svg" />
+    <Content Include="dist\images\music jazz.svg" />
+    <Content Include="dist\images\music pop.svg" />
+    <Content Include="dist\images\music rock.svg" />
+    <Content Include="dist\images\password-icon.svg" />
+    <Content Include="dist\images\pin food.svg" />
+    <Content Include="dist\images\pin gas.svg" />
+    <Content Include="dist\images\pin star.svg" />
+    <Content Include="dist\images\raindrop.svg" />
+    <Content Include="dist\images\sky.svg" />
+    <Content Include="dist\images\text.svg" />
+    <Content Include="dist\images\user-icon.svg" />
+    <Content Include="dist\images\user-inner.svg" />
+    <Content Include="dist\images\WBA-logo.svg" />
+    <Content Include="dist\images\wiper.svg" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="dist\js\jquery.min.js" />
+    <Content Include="dist\js\validator.min.js" />
+    <Content Include="public\css\animations.css" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\conversation.css" />
+    <Content Include="public\css\font.css" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\css\responsive.css" />
+    <Content Include="public\css\sidebar.css" />
+    <Content Include="public\css\style.css" />
+    <Content Include="public\css\tooltip-dialogs.css" />
+    <Content Include="public\css\weather.css" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\ibm-glyph.svg" />
+    <Content Include="public\fonts\ibm-icons.svg" />
+    <Content Include="public\fonts\menlo.svg" />
+    <Content Include="public\ibm\speech-to-text.js" />
+    <Content Include="public\ibm\text-to-speech.js" />
+    <Content Include="public\ibm\watson-speech.min.js" />
+    <Content Include="public\icons\150174473871443.png" />
+    <Content Include="public\icons\ibm_watson_logo_colors.png" />
+    <Content Include="public\icons\ibm_watson_logo_colors1.png" />
+    <Content Include="public\icons\ibm_watson_logo_purple.png" />
+    <Content Include="public\icons\newwatson.png" />
+    <Content Include="public\icons\ibm_watson_logo_colors.jpg" />
+    <Content Include="public\images\3B33F20327EE6DA0.png" />
+    <Content Include="public\images\3B33F20327EE6DA3.png" />
+    <Content Include="public\images\3B33F20327EE6DA6.png" />
+    <Content Include="public\images\close-button.png" />
+    <Content Include="public\images\watson.png" />
+    <Content Include="public\images\WBA-logo.png" />
+    <Content Include="public\images\aha-bg_1.jpg" />
+    <Content Include="public\images\login-bg.jpg" />
+    <Content Include="public\images\test.jpg" />
+    <Content Include="public\images\favicon.ico" />
+    <Content Include="public\images\ac hi.svg" />
+    <Content Include="public\images\ac lo.svg" />
+    <Content Include="public\images\audio-off.svg" />
+    <Content Include="public\images\audio-on.svg" />
+    <Content Include="public\images\background.svg" />
+    <Content Include="public\images\console frame.svg" />
+    <Content Include="public\images\console map.svg" />
+    <Content Include="public\images\dashboard.svg" />
+    <Content Include="public\images\default screen.svg" />
+    <Content Include="public\images\head.svg" />
+    <Content Include="public\images\headlights.svg" />
+    <Content Include="public\images\heat hi.svg" />
+    <Content Include="public\images\heat lo.svg" />
+    <Content Include="public\images\home.svg" />
+    <Content Include="public\images\lh-logo.svg" />
+    <Content Include="public\images\logout.svg" />
+    <Content Include="public\images\map food cuisine.svg" />
+    <Content Include="public\images\map food numbers.svg" />
+    <Content Include="public\images\map food.svg" />
+    <Content Include="public\images\map gas.svg" />
+    <Content Include="public\images\map general.svg" />
+    <Content Include="public\images\map restrooms.svg" />
+    <Content Include="public\images\mic-off.svg" />
+    <Content Include="public\images\mic-on.svg" />
+    <Content Include="public\images\music classical.svg" />
+    <Content Include="public\images\music general.svg" />
+    <Content Include="public\images\music genre.svg" />
+    <Content Include="public\images\music jazz.svg" />
+    <Content Include="public\images\music pop.svg" />
+    <Content Include="public\images\music rock.svg" />
+    <Content Include="public\images\password-icon.svg" />
+    <Content Include="public\images\pin food.svg" />
+    <Content Include="public\images\pin gas.svg" />
+    <Content Include="public\images\pin star.svg" />
+    <Content Include="public\images\raindrop.svg" />
+    <Content Include="public\images\sky.svg" />
+    <Content Include="public\images\text.svg" />
+    <Content Include="public\images\user-icon.svg" />
+    <Content Include="public\images\user-inner.svg" />
+    <Content Include="public\images\WBA-logo.svg" />
+    <Content Include="public\images\wiper.svg" />
+    <Content Include="public\js\animations.js" />
+    <Content Include="public\js\api.js" />
+    <Content Include="public\js\bootstrap.min.js" />
+    <Content Include="public\js\common.js" />
+    <Content Include="public\js\conversation.js" />
+    <Content Include="public\js\conversationResponse.js" />
+    <Content Include="public\js\fetch.js" />
+    <Content Include="public\js\global.js" />
+    <Content Include="public\js\global_video.js" />
+    <Content Include="public\js\jquery.min.js" />
+    <Content Include="public\js\login.js" />
+    <Content Include="public\js\panel.js" />
+    <Content Include="public\js\sidebar.js" />
+    <Content Include="public\js\speech-to-text.js" />
+    <Content Include="public\js\text-to-speech.js" />
+    <Content Include="public\js\tooltip-dialogs.js" />
+    <Content Include="public\js\validator.min.js" />
+    <Content Include="public\js\watson-speech.min.js" />
+    <Content Include="public\Profiles\.jpg" />
+    <Content Include="public\Profiles\new.jpg" />
+    <Content Include="public\js\libs\snap.svg.js" />
+    <Content Include="public\js\ui_tests\tests.js" />
+    <Content Include="ui\css\animations.css" />
+    <Content Include="ui\css\bootstrap.min.css" />
+    <Content Include="ui\css\conversation.css" />
+    <Content Include="ui\css\font.css" />
+    <Content Include="ui\css\main.css" />
+    <Content Include="ui\css\responsive.css" />
+    <Content Include="ui\css\sidebar.css" />
+    <Content Include="ui\css\style.css" />
+    <Content Include="ui\css\tooltip-dialogs.css" />
+    <Content Include="ui\css\weather.css" />
+    <Content Include="ui\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="ui\fonts\ibm-glyph.svg" />
+    <Content Include="ui\fonts\ibm-icons.svg" />
+    <Content Include="ui\fonts\menlo.svg" />
+    <Content Include="ui\ibm\speech-to-text.js" />
+    <Content Include="ui\ibm\text-to-speech.js" />
+    <Content Include="ui\ibm\watson-speech.min.js" />
+    <Content Include="ui\icons\150174473871443.png" />
+    <Content Include="ui\icons\ibm_watson_logo_colors.png" />
+    <Content Include="ui\icons\ibm_watson_logo_colors1.png" />
+    <Content Include="ui\icons\ibm_watson_logo_purple.png" />
+    <Content Include="ui\icons\newwatson.png" />
+    <Content Include="ui\icons\ibm_watson_logo_colors.jpg" />
+    <Content Include="ui\images\150174473871443.png" />
+    <Content Include="ui\images\3B33F20327EE6DA0.png" />
+    <Content Include="ui\images\3B33F20327EE6DA3.png" />
+    <Content Include="ui\images\3B33F20327EE6DA6.png" />
+    <Content Include="ui\images\close-button.png" />
+    <Content Include="ui\images\ibm_watson_logo_colors.png" />
+    <Content Include="ui\images\ibm_watson_logo_colors1.png" />
+    <Content Include="ui\images\ibm_watson_logo_purple.png" />
+    <Content Include="ui\images\newwatson.png" />
+    <Content Include="ui\images\WBA-logo.png" />
+    <Content Include="ui\images\aha-bg_1.jpg" />
+    <Content Include="ui\images\ibm_watson_logo_colors.jpg" />
+    <Content Include="ui\images\login-bg.jpg" />
+    <Content Include="ui\images\test.jpg" />
+    <Content Include="ui\images\favicon.ico" />
+    <Content Include="ui\images\ac hi.svg" />
+    <Content Include="ui\images\ac lo.svg" />
+    <Content Include="ui\images\audio-off.svg" />
+    <Content Include="ui\images\audio-on.svg" />
+    <Content Include="ui\images\background.svg" />
+    <Content Include="ui\images\console frame.svg" />
+    <Content Include="ui\images\console map.svg" />
+    <Content Include="ui\images\dashboard.svg" />
+    <Content Include="ui\images\default screen.svg" />
+    <Content Include="ui\images\head.svg" />
+    <Content Include="ui\images\headlights.svg" />
+    <Content Include="ui\images\heat hi.svg" />
+    <Content Include="ui\images\heat lo.svg" />
+    <Content Include="ui\images\home.svg" />
+    <Content Include="ui\images\lh-logo.svg" />
+    <Content Include="ui\images\logout.svg" />
+    <Content Include="ui\images\map food cuisine.svg" />
+    <Content Include="ui\images\map food numbers.svg" />
+    <Content Include="ui\images\map food.svg" />
+    <Content Include="ui\images\map gas.svg" />
+    <Content Include="ui\images\map general.svg" />
+    <Content Include="ui\images\map restrooms.svg" />
+    <Content Include="ui\images\mic-off.svg" />
+    <Content Include="ui\images\mic-on.svg" />
+    <Content Include="ui\images\music classical.svg" />
+    <Content Include="ui\images\music general.svg" />
+    <Content Include="ui\images\music genre.svg" />
+    <Content Include="ui\images\music jazz.svg" />
+    <Content Include="ui\images\music pop.svg" />
+    <Content Include="ui\images\music rock.svg" />
+    <Content Include="ui\images\password-icon.svg" />
+    <Content Include="ui\images\pin food.svg" />
+    <Content Include="ui\images\pin gas.svg" />
+    <Content Include="ui\images\pin star.svg" />
+    <Content Include="ui\images\raindrop.svg" />
+    <Content Include="ui\images\sky.svg" />
+    <Content Include="ui\images\text.svg" />
+    <Content Include="ui\images\user-icon.svg" />
+    <Content Include="ui\images\user-inner.svg" />
+    <Content Include="ui\images\WBA-logo.svg" />
+    <Content Include="ui\images\wiper.svg" />
+    <Content Include="ui\js\animations.js" />
+    <Content Include="ui\js\api.js" />
+    <Content Include="ui\js\bootstrap.min.js" />
+    <Content Include="ui\js\common.js" />
+    <Content Include="ui\js\conversation.js" />
+    <Content Include="ui\js\conversationResponse.js" />
+    <Content Include="ui\js\fetch.js" />
+    <Content Include="ui\js\global.js" />
+    <Content Include="ui\js\global_video.js" />
+    <Content Include="ui\js\jquery.min.js" />
+    <Content Include="ui\js\login.js" />
+    <Content Include="ui\js\panel.js" />
+    <Content Include="ui\js\sidebar.js" />
+    <Content Include="ui\js\tooltip-dialogs.js" />
+    <Content Include="ui\js\validator.min.js" />
+    <Content Include="ui\js\libs\snap.svg.js" />
+    <Content Include="ui\js\ui_tests\tests.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\" />
+    <Folder Include=".vs\car-dashboard-master\" />
+    <Folder Include=".vs\car-dashboard-master\config\" />
+    <Folder Include=".vs\car-dashboard-master\v15\" />
+    <Folder Include=".vs\car-dashboard-master\v16\" />
+    <Folder Include=".vs\config\" />
+    <Folder Include="bin\" />
+    <Folder Include="config" />
+    <Folder Include="dist" />
+    <Folder Include="dist\css" />
+    <Folder Include="dist\fonts" />
+    <Folder Include="dist\fonts\bold" />
+    <Folder Include="dist\fonts\bold-italic" />
+    <Folder Include="dist\fonts\light" />
+    <Folder Include="dist\fonts\light-italic" />
+    <Folder Include="dist\fonts\medium" />
+    <Folder Include="dist\fonts\medium-italic" />
+    <Folder Include="dist\fonts\roman" />
+    <Folder Include="dist\fonts\roman-italic" />
+    <Folder Include="dist\ibm" />
+    <Folder Include="dist\images" />
+    <Folder Include="dist\js" />
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\fonts" />
+    <Folder Include="public\fonts\bold" />
+    <Folder Include="public\fonts\bold-italic" />
+    <Folder Include="public\fonts\light" />
+    <Folder Include="public\fonts\light-italic" />
+    <Folder Include="public\fonts\medium" />
+    <Folder Include="public\fonts\medium-italic" />
+    <Folder Include="public\fonts\roman" />
+    <Folder Include="public\fonts\roman-italic" />
+    <Folder Include="public\ibm" />
+    <Folder Include="public\icons" />
+    <Folder Include="public\images" />
+    <Folder Include="public\js" />
+    <Folder Include="public\js\libs" />
+    <Folder Include="public\js\ui_tests" />
+    <Folder Include="public\Profiles" />
+    <Folder Include="readme_images" />
+    <Folder Include="routes" />
+    <Folder Include="test" />
+    <Folder Include="training" />
+    <Folder Include="ui" />
+    <Folder Include="ui\css" />
+    <Folder Include="ui\fonts" />
+    <Folder Include="ui\fonts\bold" />
+    <Folder Include="ui\fonts\bold-italic" />
+    <Folder Include="ui\fonts\light" />
+    <Folder Include="ui\fonts\light-italic" />
+    <Folder Include="ui\fonts\medium" />
+    <Folder Include="ui\fonts\medium-italic" />
+    <Folder Include="ui\fonts\roman" />
+    <Folder Include="ui\fonts\roman-italic" />
+    <Folder Include="ui\ibm" />
+    <Folder Include="ui\icons" />
+    <Folder Include="ui\images" />
+    <Folder Include="ui\js" />
+    <Folder Include="ui\js\libs" />
+    <Folder Include="ui\js\ui_tests" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,20 @@
+---
+declared-services:
+  Conversation-zb:
+    label: conversation
+    plan: free
+  Speech to Text-vb:
+    label: speech_to_text
+    plan: standard
+  Text to Speech-5w:
+    label: text_to_speech
+    plan: standard
+applications:
+- name:  ferochatbot
+  command: npm start
+  path: .
+  memory: 512M
+  services:
+  - Conversation-51
+  - Speech to Text-vb
+  - Text to Speech-5w
